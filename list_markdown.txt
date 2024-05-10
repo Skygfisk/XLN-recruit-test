@@ -1,3 +1,0 @@
-./dir_test/fileset/README.md
-./dir_test/path/README.md
-./dir_test/README.md
