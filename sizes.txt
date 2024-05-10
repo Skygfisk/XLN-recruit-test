@@ -1,13 +1,12 @@
-5.5K  system_processes.txt
-4.0K  dir_test
-4.0K  services
-3.0K  list_overrides.txt
-1.9K  data.txt
-1.9K  data_sorted.txt
-1.9K  data_summed_and_sorted.txt
- 237  list_directories.txt
-  76  list_markdown.txt
-  54  system_cpu.txt
-  29  system_ipv4.txt
-   6  system_ram.txt
-   0  sizes.txt
+1893	./data.txt
+1893	./data_sorted.txt
+1893	./data_summed_and_sorted.txt
+796312	./dir_test
+237	./list_directories.txt
+76	./list_markdown.txt
+3071	./list_overrides.txt
+4232	./services
+54	./system_cpu.txt
+29	./system_ipv4.txt
+5565	./system_processes.txt
+6	./system_ram.txt

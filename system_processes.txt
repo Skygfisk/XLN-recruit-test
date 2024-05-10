@@ -2,7 +2,7 @@
  3.6  1.4 /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node --dns-result-order=ipv4first /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=true
  2.3  0.1 /sbin/init
  0.7  0.4 python3 /snap/ubuntu-desktop-installer/1286/usr/bin/cloud-init status --wait
- 0.5  0.0 /bin/bash ./odd.sh git@github.com:Skygfisk/XLN-recruit-test.git polkit cron snapd
+ 0.5  0.0 /bin/bash ./odd.sh git@github.com:Skygfisk/XLN-recruit-test.git polkit sssd snapd test cron
  0.2  1.1 /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/out/server-main.js --host=127.0.0.1 --port=0 --connection-token=849976912-3575200346-3614044026-178991172 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
  0.1  1.0 /snap/ubuntu-desktop-installer/1286/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1286/etc/subiquity/postinst.d
  0.1  0.7 /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node -e const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 36809 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });

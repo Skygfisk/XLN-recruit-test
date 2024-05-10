@@ -1,3 +1,5 @@
 polkit is active and running
-cron is active and running
+sssd is inactive and dead
 snapd is active and running
+test is inactive and dead
+cron is active and running
