@@ -1,0 +1,3 @@
+polkit is active and running
+cron is active and running
+snapd is active and running

@@ -1,0 +1,52 @@
+%CPU %MEM COMMAND
+ 3.6  1.4 /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node --dns-result-order=ipv4first /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=true
+ 2.3  0.1 /sbin/init
+ 0.7  0.4 python3 /snap/ubuntu-desktop-installer/1286/usr/bin/cloud-init status --wait
+ 0.5  0.0 /bin/bash ./odd.sh git@github.com:Skygfisk/XLN-recruit-test.git polkit cron snapd
+ 0.2  1.1 /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/out/server-main.js --host=127.0.0.1 --port=0 --connection-token=849976912-3575200346-3614044026-178991172 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+ 0.1  1.0 /snap/ubuntu-desktop-installer/1286/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1286/etc/subiquity/postinst.d
+ 0.1  0.7 /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node -e const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 36809 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+ 0.1  0.7 /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/out/bootstrap-fork --type=fileWatcher
+ 0.0  0.0 /init
+ 0.0  0.0 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+ 0.0  0.1 /lib/systemd/systemd-journald
+ 0.0  0.0 /lib/systemd/systemd-udevd
+ 0.0  0.0 snapfuse /var/lib/snapd/snaps/bare_5.snap /snap/bare/5 -o ro,nodev,allow_other,suid
+ 0.0  0.0 snapfuse /var/lib/snapd/snaps/ubuntu-desktop-installer_1276.snap /snap/ubuntu-desktop-installer/1276 -o ro,nodev,allow_other,suid
+ 0.0  0.0 snapfuse /var/lib/snapd/snaps/gtk-common-themes_1535.snap /snap/gtk-common-themes/1535 -o ro,nodev,allow_other,suid
+ 0.0  0.0 snapfuse /var/lib/snapd/snaps/core22_864.snap /snap/core22/864 -o ro,nodev,allow_other,suid
+ 0.0  0.0 snapfuse /var/lib/snapd/snaps/snapd_21465.snap /snap/snapd/21465 -o ro,nodev,allow_other,suid
+ 0.0  0.0 snapfuse /var/lib/snapd/snaps/ubuntu-desktop-installer_1286.snap /snap/ubuntu-desktop-installer/1286 -o ro,nodev,allow_other,suid
+ 0.0  0.0 snapfuse /var/lib/snapd/snaps/core22_1380.snap /snap/core22/1380 -o ro,nodev,allow_other,suid
+ 0.0  0.0 snapfuse /var/lib/snapd/snaps/snapd_20290.snap /snap/snapd/20290 -o ro,nodev,allow_other,suid
+ 0.0  0.1 /lib/systemd/systemd-resolved
+ 0.0  0.0 /usr/sbin/cron -f -P
+ 0.0  0.0 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 0.0  0.2 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+ 0.0  0.0 /usr/sbin/rsyslogd -n -iNONE
+ 0.0  0.4 /usr/lib/snapd/snapd
+ 0.0  0.0 /lib/systemd/systemd-logind
+ 0.0  0.0 /bin/bash /snap/ubuntu-desktop-installer/1286/bin/subiquity-server
+ 0.0  0.0 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+ 0.0  0.2 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+ 0.0  0.0 /sbin/agetty -o -p -- \u --noclear tty1 linux
+ 0.0  0.0 /init
+ 0.0  0.0 /init
+ 0.0  0.0 -bash
+ 0.0  0.0 /bin/login -f
+ 0.0  0.1 /lib/systemd/systemd --user
+ 0.0  0.0 (sd-pam)
+ 0.0  0.0 -bash
+ 0.0  0.0 /init
+ 0.0  0.0 /init
+ 0.0  0.0 sh -c "$VSCODE_WSL_EXT_LOCATION/scripts/wslServer.sh" dc96b837cf6bb4af9cd736aa3af08cf8279f7685 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=849976912-3575200346-3614044026-178991172 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+ 0.0  0.0 sh /mnt/c/Users/Odd/.vscode/extensions/ms-vscode-remote.remote-wsl-0.88.2/scripts/wslServer.sh dc96b837cf6bb4af9cd736aa3af08cf8279f7685 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=849976912-3575200346-3614044026-178991172 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+ 0.0  0.0 sh /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/code-server --host=127.0.0.1 --port=0 --connection-token=849976912-3575200346-3614044026-178991172 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+ 0.0  0.0 /init
+ 0.0  0.0 /init
+ 0.0  0.6 /home/odd/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node -e const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 36809 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+ 0.0  0.0 /init
+ 0.0  0.0 /init
+ 0.0  0.2 /usr/libexec/packagekitd
+ 0.0  0.0 /usr/libexec/polkitd --no-debug
+ 0.0  0.0 ps axo pcpu,pmem,args --sort -pcpu
